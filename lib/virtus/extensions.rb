@@ -65,6 +65,12 @@ module Virtus
         self
       end
 
+      def remove_attribute(name)
+        assert_valid_name(name)
+        attribute_set.delete(name)
+        self
+      end
+
       # @see Virtus.default_value
       #
       # @api public
