@@ -205,6 +205,10 @@ module Virtus
       end
     end
 
+    def delete(name)
+      @index.delete(name)
+    end
+
     private
 
     # @api private
